@@ -77,20 +77,6 @@ public class MercedesTest {
         buildCar.click();
 
 
-        WebElement shadow_host4 = driver.findElement(By.cssSelector("owcc-car-configurator"));
-
-        Object shadowRoot4 = ((JavascriptExecutor) driver).executeScript("return arguments[0].shadowRoot", shadow_host4);
-        String id4 = (String) ((Map<String, Object>) shadowRoot4).get("shadow-6066-11e4-a52e-4f735466cecf");
-        RemoteWebElement shadowRootElement4 = new RemoteWebElement();
-        shadowRootElement4.setParent((RemoteWebDriver) driver);
-        shadowRootElement4.setId(id4);
-
-
-        WebElement DieselTickButton = shadowRootElement4.findElement(By.cssSelector("wb-icon.hydrated"));
-        Thread.sleep(1000);
-        DieselTickButton.click();
-
-
     }
     }
 
